@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louis SCHAPMAN — Curriculum Vitae</title>
+<meta name="description" content="CV de Louis Schapman, 20 ans, employé de vente et étudiant en BTS MCO en alternance à Rouen.">
+<style>
+  :root{
+    --page:#0b0c0e;
+    --card:#16181c;
+    --panel:#1b1e23;
+    --ink:#eceae5;
+    --muted:#93979e;
+    --line:#2b2f36;
+    --gold:#e9b949;
+    --gold-soft:rgba(233,185,73,.12);
+    --gold-line:rgba(233,185,73,.32);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{background:var(--page)}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:
+      radial-gradient(900px 420px at 15% -10%, rgba(233,185,73,.09), transparent 70%),
+      var(--page);
+    line-height:1.55;
+    padding:34px 16px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    max-width:920px;margin:0 auto;background:var(--card);
+    border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.55);
+  }
+
+  header{
+    position:relative;
+    padding:40px 44px 32px;
+    background:linear-gradient(135deg,#111317 0%,#1a1d22 100%);
+    border-bottom:1px solid var(--line);
+  }
+  header::after{
+    content:"";position:absolute;left:44px;right:44px;bottom:0;height:2px;
+    background:linear-gradient(90deg,var(--gold),rgba(233,185,73,0));
+  }
+  .top{display:flex;align-items:center;gap:24px}
+  .avatar{
+    width:94px;height:94px;flex:0 0 94px;border-radius:50%;
+    background:var(--gold-soft);border:1px solid var(--gold-line);
+    display:flex;align-items:center;justify-content:center;
+    font-size:29px;font-weight:600;letter-spacing:1px;color:var(--gold);
+  }
+  h1{font-size:32px;font-weight:700;letter-spacing:-.4px;line-height:1.1;color:#f4f2ee}
+  h1 span{font-weight:400;color:var(--gold);opacity:.85}
+  .role{font-size:15px;color:#b9bcc2;margin-top:7px;font-weight:500}
+  .role b{color:var(--gold);font-weight:600}
+  .contact{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted)}
+  .contact a{color:#cfd2d7;text-decoration:none;border-bottom:1px solid rgba(233,185,73,.35)}
+  .contact a:hover{color:var(--gold);border-color:var(--gold)}
+
+  .body{display:grid;grid-template-columns:1fr 266px}
+  main{padding:34px 42px 42px}
+  aside{padding:34px 28px 42px;background:var(--panel);border-left:1px solid var(--line)}
+
+  h2{
+    font-size:11.5px;text-transform:uppercase;letter-spacing:1.8px;font-weight:700;
+    color:var(--gold);margin-bottom:15px;display:flex;align-items:center;gap:9px;
+  }
+  h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--gold-line),transparent)}
+  section+section{margin-top:30px}
+  .block+.block{margin-top:26px}
+
+  .entry{margin-bottom:21px}
+  .entry:last-child{margin-bottom:0}
+  .entry h3{font-size:16px;font-weight:650;line-height:1.32;color:#f2f0eb}
+  .where{font-size:13.5px;color:#c2c5ca;font-weight:500}
+  .when{font-size:12.5px;color:var(--muted);margin:2px 0 7px}
+  .when em{font-style:normal;color:var(--gold);font-weight:600;letter-spacing:.2px}
+  .entry p,.entry li{font-size:13.5px;color:#c8ccd2}
+  .entry ul{margin:5px 0 0 17px}
+  .entry li{margin-bottom:3px}
+  .entry li::marker{color:var(--gold)}
+
+  .intro{font-size:14px;color:#cfd3d8}
+
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+  .tag{
+    font-size:11.5px;padding:3px 9px;border-radius:999px;
+    background:var(--gold-soft);color:var(--gold);
+    border:1px solid var(--gold-line);font-weight:500;
+  }
+
+  aside ul{list-style:none}
+  aside li{font-size:13px;color:#c8ccd2;margin-bottom:9px}
+  aside li span{display:block;font-size:11.5px;color:var(--muted)}
+  aside li strong{color:#f2f0eb;font-weight:600}
+  .chips{display:flex;flex-wrap:wrap;gap:5px}
+  .chips span{
+    font-size:11.5px;padding:3px 8px;border-radius:6px;
+    background:#212429;border:1px solid #30343b;color:#c9cdd3;
+  }
+
+  footer{
+    padding:13px 42px;border-top:1px solid var(--line);background:#101215;
+    font-size:11px;color:#6f757d;display:flex;justify-content:space-between;gap:12px;
+  }
+  footer span:last-child{color:#8a7a4a}
+
+  @media print{
+    @page{size:A4;margin:9mm 0}
+    html,body{background:#0b0c0e !important;padding:0}
+    body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .page{box-shadow:none;border-radius:0;border:none;max-width:none;background:#16181c !important}
+    header,aside,footer{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+    footer{display:none}
+  }
+  @media (max-width:740px){
+    body{padding:0}
+    .page{border-radius:0;border:none}
+    .top{flex-direction:column;text-align:center}
+    header .contact{justify-content:center}
+    header{padding:32px 22px 28px}
+    header::after{left:22px;right:22px}
+    .body{grid-template-columns:1fr}
+    main{padding:28px 22px 32px}
+    aside{border-left:none;border-top:1px solid var(--line)}
+    h1{font-size:27px}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="top">
+      <div class="avatar">LS</div>
+      <div>
+        <h1>Louis SCHAPMAN <span>· 20 ans</span></h1>
+        <div class="role">Employé de vente · <b>BTS MCO</b> en alternance</div>
+      </div>
+    </div>
+    <div class="contact">
+      <a href="tel:+33767477620">07 67 47 76 20</a>
+      <a href="mailto:louisschapman76@gmail.com">louisschapman76@gmail.com</a>
+      <span>2 rue Charles Baudelaire, Appt 212 — 76100 Rouen</span>
+      <span>Permis B</span>
+    </div>
+  </header>
+
+  <div class="body">
+    <main>
+
+      <section>
+        <h2>Profil</h2>
+        <p class="intro">
+          Sérieux, curieux et volontaire, je souhaite intégrer une équipe au sein de laquelle
+          je pourrais m'investir pleinement et contribuer au développement de l'activité.
+          Mon expérience en vente en boulangerie et en service hospitalier m'a appris le
+          contact client, la rigueur des procédures d'hygiène et le travail en équipe.
+          Actuellement en 1<sup>re</sup> année de BTS MCO en alternance, je recherche une
+          structure où progresser durablement.
+        </p>
+      </section>
+
+      <section>
+        <h2>Expérience professionnelle</h2>
+
+        <div class="entry">
+          <h3>Employé de vente</h3>
+          <div class="where">Boulangerie Marie-Blachère — Rouen</div>
+          <div class="when"><em>Septembre 2025 – Janvier 2026</em></div>
+          <ul>
+            <li>Accueil, conseil et encaissement de la clientèle en flux continu.</li>
+            <li>Mise en place et réassort des produits en vitrine, tenue du point de vente.</li>
+            <li>Application des règles d'hygiène et de traçabilité du rayon.</li>
+          </ul>
+          <div class="tags"><span class="tag">Vente</span><span class="tag">Encaissement</span><span class="tag">Relation client</span></div>
+        </div>
+
+        <div class="entry">
+          <h3>Employé de vente (saisonnier)</h3>
+          <div class="where">Boulangerie Feuillette — Rouen</div>
+          <div class="when"><em>Août 2025</em></div>
+          <ul>
+            <li>Service au comptoir et conseil produit auprès des clients.</li>
+            <li>Réassort, présentation des produits et maintien de la propreté de l'espace de vente.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <h3>Agent de service hospitalier</h3>
+          <div class="where">Clinique Héméra — Rouen</div>
+          <div class="when"><em>Mars 2024</em></div>
+          <ul>
+            <li>Gestion des stocks et hygiène des locaux et des équipements.</li>
+            <li>Distribution des plateaux repas et respect des protocoles du service.</li>
+            <li>Accompagnement des patients et de leur famille au quotidien.</li>
+          </ul>
+          <div class="tags"><span class="tag">Hygiène</span><span class="tag">Gestion de stocks</span><span class="tag">Soin relationnel</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formation</h2>
+
+        <div class="entry">
+          <h3>BTS Management Commercial Opérationnel (MCO) — 1<sup>re</sup> année, en alternance</h3>
+          <div class="where">École supérieure de commerce FASUP' — Rouen</div>
+          <div class="when"><em>Depuis 2025</em></div>
+        </div>
+
+        <div class="entry">
+          <h3>Baccalauréat technologique STI2D</h3>
+          <div class="where">Lycée Marcel Sembat — Sotteville-lès-Rouen</div>
+          <div class="when"><em>2023</em> · 1<sup>re</sup> année de BTS CIEL en 2024</div>
+        </div>
+
+        <div class="entry">
+          <h3>Brevet d'Initiation à l'Aéronautique (BIA)</h3>
+          <div class="where">Lycée Jean-Baptiste de La Salle — Rouen</div>
+          <div class="when"><em>2022</em></div>
+        </div>
+
+        <div class="entry">
+          <h3>Diplôme National du Brevet — mention assez bien</h3>
+          <div class="where">Collège Fénelon — Elbeuf</div>
+          <div class="when"><em>2021</em></div>
+        </div>
+      </section>
+
+    </main>
+
+    <aside>
+      <div class="block">
+        <h2>Compétences</h2>
+        <div class="chips">
+          <span>Sens relationnel</span>
+          <span>Capacité d'écoute</span>
+          <span>Travail en équipe</span>
+          <span>Sens des responsabilités</span>
+          <span>Discrétion, sérieux</span>
+          <span>Curiosité</span>
+        </div>
+      </div>
+
+      <div class="block">
+        <h2>Logiciels maîtrisés</h2>
+        <ul>
+          <li><strong>Microsoft Office</strong><span>Word, Excel, PowerPoint</span></li>
+          <li><strong>Scratch, Unreal Engine</strong><span>Création interactive</span></li>
+          <li><strong>Retouche vidéo</strong><span>Création graphique</span></li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Langues</h2>
+        <ul>
+          <li><strong>Anglais — C1</strong><span>Expérimenté, autonome</span></li>
+          <li><strong>Allemand — B1</strong><span>Indépendant, niveau de base</span></li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Permis</h2>
+        <ul>
+          <li><strong>Permis B</strong><span>Véhiculé</span></li>
+          <li><strong>Permis côtier / fluvial</strong><span>En cours d'obtention</span></li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Centres d'intérêt</h2>
+        <ul>
+          <li><strong>Informatique</strong><span>Web3, réalité virtuelle</span></li>
+          <li><strong>Piano</strong></li>
+          <li><strong>Loisirs nautiques</strong></li>
+          <li><strong>Jeu d'échecs</strong></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <span>Louis SCHAPMAN — Curriculum vitae</span>
+    <span>Mis à jour le 9 novembre 2026</span>
+  </footer>
+</div>
+</body>
+</html>
